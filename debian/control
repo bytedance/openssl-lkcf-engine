@@ -1,0 +1,15 @@
+Source: lkcf-engine
+Section: admin
+Priority: optional
+Standards-Version: 1.0.0
+Build-Depends: debhelper (>=9), gcc, libkeyutils-dev(>=1.6), libssl-dev(>=1.0)
+Maintainer: veLinux Team <velinux@openvenus.cn>
+
+Package: lkcf-engine
+Architecture: any
+Depends: ${shlibs:Depends}, ${misc:Depends}, openssl(>= 1.1.0)
+Description: lkcf-engine.
+  lkcf-engine is a LKCF(linux kernel crypto framework) based
+  OpenSSL engine. lkcf-engine offload cryptography computions to
+  accelerator via linux kernel crypto framework.
+
